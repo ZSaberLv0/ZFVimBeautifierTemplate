@@ -22,21 +22,21 @@ endif
 if !exists("g:ZFBeautifierSetting['t:escape_string_doublequote']")
     let g:ZFBeautifierSetting['t:escape_string_doublequote'] = {
                 \ 'escape' : [
-                \     '(?<=")[^"]+(?=")',
+                \     '(?<=")[^"]*(?=")',
                 \ ],
                 \ }
 endif
 if !exists("g:ZFBeautifierSetting['t:escape_string_singlequote']")
     let g:ZFBeautifierSetting['t:escape_string_singlequote'] = {
                 \ 'escape' : [
-                \     "(?<=')'[^']+(?<=')",
+                \     "(?<=')'[^']*(?<=')",
                 \ ],
                 \ }
 endif
 if !exists("g:ZFBeautifierSetting['t:escape_string_backquote']")
     let g:ZFBeautifierSetting['t:escape_string_backquote'] = {
                 \ 'escape' : [
-                \     '(?<=`+)[^`]+(?<=`+)',
+                \     '(?<=`)[^`]*(?<=`)',
                 \ ],
                 \ }
 endif
